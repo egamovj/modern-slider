@@ -25,3 +25,9 @@ header {
 header a {
     margin-right: 40px;
 }
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
