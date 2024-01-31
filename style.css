@@ -90,12 +90,28 @@ header a {
     letter-spacing: 3px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border: none;
+}
+
+.carousel .list .item .content button:nth-child(1):hover {
+    background: transparent;
+    border: 1px solid #eee;
+    color: #eee;
 }
 
 .carousel .list .item .content button:nth-child(2) {
     background-color: transparent;
     color: #eee;
     border: 1px solid #eee;
+    transition: all 0.3s linear;
+}
+
+.carousel .list .item .content button:nth-child(2):hover {
+    background-color: #eee;
+    color: #000;
+    border: none;
 }
 
 .thumbnail {
@@ -156,6 +172,7 @@ header a {
     font-size: large;
     transition: .5s;
     z-index: 100;
+    cursor: pointer;
 }
 
 .arrows button:hover {
