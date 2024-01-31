@@ -141,3 +141,37 @@ body {
     background-color: var(--pistachio); 
 }
 
+.navbar,
+.header-action {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;  
+    padding-block: 18px;
+    z-index: 4;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100%-140px);
+    height: 1px;
+    background-color: var(--white_10);
+}
+
+.header.active {
+    background-color: var(--eerie-black-1);
+    box-shadow: 0 0 10 hsla(0, 0%, 0%, 0.8);
+}
+
+.header.active::after {
+    display: none;
+}
